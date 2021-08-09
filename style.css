@@ -1,0 +1,548 @@
+
+/* Definindo a fonte e a largura máxima da página e removendo margin, padding e estilos de listas*/
+*{
+    margin:0;
+    padding: 0;
+    max-width: 1920px;
+    font-family: 'Montserrat', sans-serif;
+    list-style: none;
+}
+
+/* Imagem de fundo do site */
+.background{
+    background-image: url('./web/bg.png');
+    background-repeat: no-repeat;  
+}
+
+/* ----------------------------------- 1ª página-------------------------------------------------- */
+
+/* Fundo da página inicial*/
+#firstPage{
+    background-image: url(./web/s1\ ft1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 40px;
+}
+
+/* Cor da letra dos links*/
+a{
+    color: #fff;
+    text-decoration: none;  
+}
+
+/* Barra de navegação */
+header{
+    display: flex;
+    margin-left: 7.292%;;
+    margin-right: 5.99%;
+    align-items: center;
+    justify-content: space-between;
+    height: 117px;    
+}
+
+/* Deixando os itens da barra de navegação um ao lado do outro com box flexivel*/
+#menu{
+    display: flex;
+}
+
+/* Aumentando a area de contato dos itens da barra de navegação */
+#menu a{
+    padding: 25px;
+    font-size: 20px;
+    font-weight: 700;
+ }
+
+ /* Criando um container para o botão do menu hamburguer */
+.containerButton{
+    position: absolute;
+    z-index: 10;
+    visibility: hidden;
+}
+
+/* removendo a caixa de verificação do checkbox, mudando efeito do mouse quando passa por cima e tirando a visibilidade*/
+#checkbox-menu{
+    cursor: pointer;
+    visibility: hidden;
+    display: none;
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+/* Criando um estilo para o botão do menu hamburguer */
+label{
+    margin-left: 10px;
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 40px;
+}
+
+label span{
+    position: absolute;
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: white;
+}
+
+label span:nth-child(1){
+    top: 0;
+}
+
+label span:nth-child(2){
+    top: 10px;
+}
+
+label span:nth-child(3){
+    top: 20px;
+}
+
+/* Transformando o botão hamburguer em um "X" quando clicado */
+#checkbox-menu:checked + label span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+#checkbox-menu:checked + label span:nth-child(2){
+    opacity: 0;
+}
+
+#checkbox-menu:checked + label span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px
+}
+
+/*removendo "Home" pois ele só será visivel no menu hamburguer mobile*/
+#home{
+    display: none;
+}
+
+/* Título da página inicial */
+
+#firstPage h1{
+    color: white;
+    font-size: 140.8px;
+    font-weight: 800;
+    width: 80%;
+    margin-inline: 10%;
+    margin-top: 10.5%;
+    line-height: 1.4em;
+    margin-bottom: 5.8%;
+    text-align: center;
+}
+
+/* Texto da página inicial */
+#firstPage p{
+    transform: translate(-50% , -50%);
+    text-align: center;
+    position: relative;
+    color: white;
+    font-weight: 400px;
+    font-size: 19.5px;
+    line-height: 1.52em;
+    width: 900px;
+    letter-spacing: 0.4px;
+    left: 50%;
+    margin-bottom:4%;
+}
+
+/* Deixando o texto amarelo da primeira pagina mais espesso*/
+#firstPage p span{
+    font-weight: 600;
+}
+
+/* Escondendo as quebras de linhas que só serão usadas no display mobile nas medias queries*/
+#mobile{
+    display: none;
+}
+
+/* Botão azul da primeira pagina */
+#button{
+    display: block;
+    text-align: center;
+    position: relative;
+    letter-spacing: 1px;
+    transform: translateX(-50%);
+    left: 50%;
+    background-color: #1cd4e9;
+    font-size: 18.5px;
+    font-weight: bold;
+    color: white;
+    padding: 30px 25px;
+    border-radius: 55px;
+    border: none;
+    width: 300px;
+    cursor: pointer;
+}
+
+/* ----------------------------------------- 2ª página------------------------------------- */
+
+
+/* SOBRE (2ª pagina) */
+#secondPage h1{
+    font-size: 60px;
+    margin-left: 7.292%;
+    margin-top: 82px;
+}
+
+/* Texto da 2ª pagina */
+#secondPage p{
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    font-size: 20px;
+    font-weight: 300px;
+    line-height: 29px;
+    margin-left: 7.292%;
+    margin-top: 130px;
+    padding: 45px;
+    width: 58.5%;
+    letter-spacing: 0.05px;
+    box-shadow: 0 0 25px rgb(163, 163, 163);
+}
+
+
+/* ----------------------------------------- 3ª página---------------------------------- */
+
+/* Titulo da 3ª pagina, "SERVIÇOS" */
+#thirdPage h1{
+    font-size: 60px;
+    margin-left: 7.292%;;
+    margin-top: 205px;
+}
+
+/* Container flex dos cards de "SERVIÇOS" */
+#containerS3{
+    display:flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 110px;  
+    flex-wrap: wrap ; 
+    padding-bottom: 173px;
+}
+
+/* Definição do tamanho dos cards de "SERVIÇOS" */
+.s3{
+    width: 559px;
+    height: 693px;   
+}
+
+/* Título em amarelo dos cards de "SERVIÇOS" */
+#containerS3 h2{
+    margin-top: 73px;
+    font-size: 30px;
+    color: yellow;
+}
+
+
+/* Texto dos cards de "SERVIÇOS" */
+#containerS3 p{
+    margin-top: 72px;
+    margin-right: 81px;
+    margin-left: 81px;
+    font-size: 25px;
+    color: white;
+    line-height: 29px;
+    z-index: 100;
+}
+
+/* Colocação das imagens dos cards dentro do container S3 */
+
+/* 1º card */
+.ft1{
+    background-image: url('./web/s3\ ft1.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;  
+}
+
+/* 2º card */
+.ft2{
+    background-image: url('./web/s3\ ft2.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+/* 3º card */
+.ft3{
+
+    position: relative;
+    background-image: url('./web/s3\ ft3.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;  
+}
+
+/* Filtro utilizado para escurecer o 3º card */
+#filter{
+    position: relative;
+    background-color: rgba(0,0,0,0.6);
+    height: 650px;
+    width: 515px;
+    border-radius: 35px;
+    margin-left: 22px;
+    margin-top: 19.4px;
+    z-index: 1;  
+}
+
+ /* Adaptação do filtro com o texto do 3º card */
+#text{
+    margin-top: -19.4px;
+    margin-inline: -22px;
+    position: absolute;
+    z-index: 2;
+}
+
+/* ------------------------------- 4ª página------------------------------------- */
+
+/* Título da 4ª página, "DIFERENCIAIS" */
+
+#fourthPage h1{
+    font-size: 60px;
+    margin-left: 7.292%;;
+}
+
+/* Container flex dos cards */
+.containerS4{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;  
+    margin-top: 111px;
+    margin-inline: 22px;
+    flex-wrap: wrap; 
+}
+
+/* Filtro para escurecer os cards */
+.filter1{
+    position: relative;
+    height: 670px;
+    width: 390.6px;
+    background-color: rgba(0,0,0,0.6);
+    margin-top: 17px;
+    margin-left: 21.5px;
+    border-radius: 50px;
+    box-shadow:0 0 10px rgba(0,0,0,0.2);
+}
+
+/* definindo largura para ajustar o filtro dos cards */
+.s4{
+    width: 434px;
+}
+
+/* 1º card */
+.ph1{position: relative;
+    background-image: url('./web/s4\ ft1.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;  
+}
+
+/* 2º card */
+.ph2{position: relative;
+    background-image: url('./web/s4\ ft2.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+/* 3º card */
+.ph3{position: relative;
+    background-image: url('./web/s4\ ft3.png');
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+
+/* Ajuste do icone de posição e tamanho do icone de medalha nos cards */
+.containerS4 img{
+    margin-top: 90px;
+    width: 150px;
+}
+
+/* Texto dos cards */
+.containerS4 p{
+    font-size: 20px;
+    margin-inline: 70px;
+    margin-top: 60px;
+    font-weight: 600;
+    line-height: 30px;
+    color: white;
+}
+
+/* Espaçamento inferior da página */
+#fourthPage{
+    padding-bottom: 145px;;
+}
+
+
+/* ------------------------------- 5ª página (última) ---------------------------------- */
+
+/* Criação dos plocos amarelos do rodapé */
+#block{
+    background-color: #efe60b;
+    height: 83px;
+}
+
+/* Criação do container */
+#containerS5{
+    background-color: #191919;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Primeiro container do rodapé com paddings laterias em porcentagem para efeito de responsividade*/
+#contain1{
+    color: white;
+    width: 580px;
+    height: 780px;
+    padding: 80px 7.292% 80px 7.292% ;
+    font-size: 20px;
+    font-weight: 300;
+}
+    
+/* Logo e icone das redes sociais ROCKY */
+ #contact{
+    display: flex;
+    width: 560px;
+    align-items: center;
+}
+    
+/* espaçamento entre o logo da ROCKY e as redes sociais */
+#logo1{
+    margin-right: 100px;
+}
+
+/* Tamanho e posicionamento dos icones das redes sociais */
+#face{
+    height: 47px;
+    margin-right: 15px;
+    margin-left: 45px;
+}
+
+/* Definindo o container flex para que o email e telefone fique lado a lado*/
+#icons{
+    display: flex;
+    margin-top: 40px;
+}
+
+/* Linha do email com icone de envelope*/
+#envelope{
+    display: flex;
+    align-items: center;
+    width: 320px; 
+}
+
+/* Tamanho e posicionamento do icone de envelope do email */
+#envelope li img{
+    margin-right: 20px;
+    height: 30px;
+    top: 10px;
+    margin-top: 5px;
+}
+
+/* Linha do numero de telefone com icone de telefone*/
+#phone{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 250px;
+    border-left: 1px solid white;   
+}
+
+/* Tamanho e posicionamento do icone de telefone do numero de telefone*/
+#phone li img{
+    margin-right: 20px;
+    height: 20px;
+    top: 10px;
+    margin-top: 5px;
+}
+
+/* Linha do endereço com ícone de localização */
+#local{
+    margin-top: 30px;
+    font-size: 12px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    width: 470px;
+    font-weight: 200;
+}
+
+/* Tamanho e posicionamento do icone de localização da linha de endereço */
+#local li img{
+    margin-right: 35px;
+    height: 21px;
+    top: 10px;
+    margin-top: 5px;
+}
+
+/* Texto do rodapé */
+#endText{
+    width: 570px;
+    margin-top: 70px;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+/* Criação de um container flex para o quadro de preenchimento das informações pessoais */
+#information{
+    padding:80px 140px 80px 7.292%;
+    height: 780px;
+}
+
+/* Tamanho e posicionamento do conteiner para os inputs */
+#fill{
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 620px;
+    height: 720px;
+    background: #818181;
+    padding: 30px;
+}
+
+/* Tamanho das caixas de input */
+input{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+/* Mudando a cor do placeholder dos inputs */
+input::placeholder{
+    color: rgb(211, 211, 211); 
+}
+
+/* Tamanho das caixas de input */
+#info{
+    height: 75px;
+    padding-left: 20px;
+}
+
+/* aumentando o tamanho do input de mensagem */
+#message{
+    padding: 20px 0 140px 20px
+}
+
+/* Botaõ "ENVIAR MENSAGEM" */
+input[type="submit"]{
+    font-size: 29px;
+    color: white;
+    height: 80px;
+    font-weight: 700;
+    background-color:#1cd4e9 ;
+    border: none;
+    cursor: pointer;
+}
+
+
+

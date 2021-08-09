@@ -1,0 +1,449 @@
+
+/* criando responsividade para resolução mobile (Largura x Altura)*/
+@media (max-width:910px) {
+
+    /* Definindo a largura da página*/
+    *{  
+        max-width: 375px;
+    }
+
+    /* ajustando o tamanho do cabeçalho */
+    header{
+        height: 53.5px;
+    }
+
+/* deixando o fundo do site Branco */
+    .background{
+        background: white;
+    }
+
+    /* Fundo da página inicial*/
+    #firstPage{
+        height: 812px ;
+        background-image: url(./mobile/s1\ mobile.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+       
+    }
+
+    /*centralizando a logo*/
+    #containerLogo{
+        position: relative;
+        transform: translateX(-50%);
+        height: 27px;
+        left: 50%;
+    }
+
+    /* alterando tamanho da logo */
+    #containerLogo img{
+        width: 112px;
+        height: 26.3px;
+    }
+
+    /* ajustando posição do botão hamburguer*/
+    .containerButton{
+        margin-left: 12px; 
+    }
+
+    /* mudando o tamanho do menu hamburguer*/
+    label{
+        margin-left: 8px;
+        height: 25px;
+        width: 32px;
+    }
+
+    label span{
+        height: 3px;
+    }
+
+    label span:nth-child(1){
+        top: 1;
+    }
+    
+    label span:nth-child(2){
+        top: 8px;
+    }
+    
+    label span:nth-child(3){
+        top: 16px;
+    }
+
+    /* definindo a posção do "X" do botão hamburguer */
+    #checkbox-menu:checked + label{
+        margin-left: 140px;
+    }
+
+    /* ajustando tamanho e posição dos itens do menu hamburguer*/
+    #menu{
+        padding: 0;
+        width: 210px;
+        height: 368px;
+        padding-top: 50px;
+    }
+
+    /*mudando o tamanho e espessura da fonte dos itens do menu hamburguer*/
+    #menu a{
+        font-size: 15.2px;
+        font-weight: 400;
+        }
+
+  /*ajustando a posição dos itens do menu e mudando a espessura a borda para separar os itens*/
+    #menu li{   
+        padding-top: 15px;
+        padding-bottom:15px;
+        font-size: 5px; 
+        border-bottom: 1px solid white;
+        text-align: center; 
+    }
+
+    /*deixando o iten "HOME" visivel no menu hamburguer*/
+    #home{
+        display: block;
+    }
+
+     /*diminuindo a fonte do título da página inicial*/
+    #firstPage h1{
+        margin-top: 135px;
+        font-size: 35px;
+        line-height: 1.4em;
+    }
+     /*diminuindo a fonte do texto da página inicial*/
+    #firstPage p{
+        margin-top: 120px;
+        letter-spacing: 0.3px;
+        font-size: 9.8px;
+        font-weight: 300;
+        line-height: 20px;
+    }
+
+    /*------------------------ 1ª Página -----------------------------------*/
+    
+     /*mudando espessura do texto amarelo da página inicial*/
+    #firstPage p span{
+        font-weight: 500;
+    }
+    
+    /* ativando a tag criada para fazer a quebra de linhas em alguns textos no mobile*/
+    #mobile{
+        display: block;
+    }
+
+    /* posição e tamanho do botão azul da primeira página*/
+    #button{
+        margin-top: 123px;
+        width: 170px;
+        cursor: pointer;
+        font-size: 9px;
+        letter-spacing: 0;
+        padding: 12px 8px;  
+    }
+
+    /*------------------------2 ª Página -----------------------------------*/
+
+    /*alterando tamanho e posição do título "SOBRE" da 2ª página*/
+    #secondPage h1{
+        margin-top: 14px;
+        font-size: 30px;
+        margin-left: 20px;   
+    }
+
+    /*alterando tamanho e posição do texto da 2ª página*/
+    #secondPage p{
+        margin: 0;
+        padding:20px;
+        width: 295px;
+        margin:20px;
+        font-size: 10px;
+        line-height: 15px;
+        letter-spacing: 0px;
+        padding-bottom: 30px;
+    }
+
+    /*------------------------ 3ª Página -----------------------------------*/
+
+    /*alterando tamanho e posição do título "SERVIÇOS" da 3ª página*/
+    #thirdPage h1{
+        margin-top: 55px;
+        font-size: 30px;
+        margin-left: 20px;   
+    }
+
+    /* Mudando o container flex dos cards de "SERVIÇOS" para coluna e ajustando sua posição*/
+    #containerS3{
+        flex-direction: column;    
+        padding-bottom: 20px;
+        margin-top: 25px;  
+    }
+
+    /* Definição do tamanho dos cards de "SERVIÇOS" */
+    .s3{
+        margin:0;
+        padding:0;
+        height: 285px;   
+    }
+
+    /* Título em amarelo dos cards de "SERVIÇOS" */
+    #containerS3 h2{
+        margin-top: 70px;
+        font-size: 20px;
+        color: yellow;
+    }
+
+    /* ajustando posição e tamanho do texto dos cards de "SERVIÇOS" */
+    #containerS3 p{
+        margin: 0;
+        margin-inline: 35px;
+        margin-top: 20px;
+        font-size: 13.2px;
+        color: white;
+        line-height: 17px;
+        font-weight: 300;
+    }
+
+    /* 1º card */
+    .ft1{
+        background-image: url('./mobile/s3\ ft1.png');
+        background-size: cover; 
+    }
+
+    /* 2º card */
+    .ft2{
+        background-image: url('./mobile/s3\ ft2.png');
+        background-size: cover;
+    }
+
+    /* 3º card */
+    .ft3{
+        background-image: url('./mobile/s3\ ft3.png');
+        background-size: cover;
+    }
+
+    /* Mudando tamanho do filtro do 3º Card*/
+    #filter{
+        height: 264px;
+        width: 331px;
+        margin-left: 22px;
+        margin-top: 19.4px;
+    }
+
+    /* Título da 4ª página, "DIFERENCIAIS" */
+    #fourthPage h1{
+        margin-top: 33px;
+        font-size: 30px;
+        margin-left: 20px; 
+    }
+
+    /* Container flex dos cards */
+    .containerS4{
+        display:flex;
+        flex-direction:column;
+        margin-top: 20px;
+        margin-left: -3px;
+        flex-wrap: wrap; 
+    }
+
+    /* Filtro para escurecer os cards */
+    .filter1{
+        height: 335px;
+        width: 337px;
+    }
+
+    /* definindo largura para ajustar o filtro dos cards */
+    .s4{
+        margin-top: -20px;
+    }
+
+    /* 1º card */
+    .ph1{
+        background-image: url('./mobile/s4\ ft1.png');
+        height: 380px;
+    }
+
+    /* 2º card */
+    .ph2{
+        background-image: url('./mobile/s4\ ft2.png');
+        height: 380px;
+    }
+
+    /* 3º card */
+    .ph3{
+        background-image: url('./mobile/s4\ ft3.png');
+        height: 380px;
+    }
+
+    /* Ajuste do icone de posição e tamanho do icone de medalha nos cards */
+    .containerS4 img{
+        margin-top: 45px;
+        width: 85px;
+    }
+
+    /* Texto dos cards */
+    .containerS4 p{
+        font-size: 13.2px;
+        margin-inline: 40px;
+        margin-top: 30px;
+        line-height: 20px;
+    }
+
+    /* Espaçamento inferior da página */
+    #fourthPage{
+        padding-bottom: 27px;
+    }
+
+    /*mudando tamanho do bloco amarlo que fica no inicio e no fim do rodapé da ultima página*/
+    #block{
+        height: 21px;
+    }
+
+    /* Primeiro container do rodapé com paddings laterias em porcentagem para efeito de responsividade*/
+    #contain1{
+        width: 100%;
+        height: 355px;
+        padding:0;
+    }
+        
+    /* Logo e icone das redes sociais ROCKY */ 
+    #sociais{
+        margin: 20px;
+        margin-top: 22px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    
+    }
+    /* espaçamento entre o logo da ROCKY e as redes sociais */
+    #logo1{
+        height: 32px;
+        margin-right: 62.5px;
+    }
+
+
+    /* Tamanho e posicionamento dos icones das redes sociais */
+    #face{
+        height: 26px;
+        margin-right: 0px;
+        margin-left: 42.5px;
+    }
+
+    /* Definindo o container flex para que o email e telefone fique lado a lado*/
+    #icons{
+        margin-top: -5px; 
+    }
+
+    /* Linha do email com icone de envelope*/
+    #envelope{
+        letter-spacing: 0.8px ;
+        font-size: 12px;
+        margin-top: 0;
+        margin-left: 20px;
+        width: 165px;
+    }
+
+    /* Tamanho e posicionamento do icone de envelope do email */
+    #envelope li img{
+        margin-right: 7px;
+        height: 18px;
+        top: 10px;
+        margin-top: 5px;
+    }
+
+    /* Linha do numero de telefone com icone de telefone*/
+    #phone{
+        font-size: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: unset;
+        letter-spacing: 0.8px;
+        width: 150px;
+        border-left: 1px solid white;  
+        margin-left: 1px;
+        
+    }
+
+    /* Tamanho e posicionamento do icone de telefone do numero de telefone*/
+    #phone li img{
+        margin-right: 7px;
+        margin-left: 25px;
+        height: 11px;
+        top: 10px;
+        margin-top: 5px;
+    }
+
+    /* Linha do endereço com ícone de localização */
+    #local{
+        margin-top: 15px;
+        font-size: 9.5px;
+        line-height: 12px;
+        letter-spacing: 0.3px;
+        width: 80%;
+        margin-left: 20px;
+    }
+
+    /* Tamanho e posicionamento do icone de localização da linha de endereço */
+    #local li img{
+        margin-right: 10px;
+        height: 12px;
+        margin-top: 5px;
+    }
+
+    /* Texto do rodapé */
+    #endText{
+        color:rgb(220, 220, 220);
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 25px;
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: 700;
+        text-align: center;
+    }
+
+    /* Criação de um container flex para o quadro de preenchimento das informações pessoais */
+    #information{
+        margin: 0;    
+        padding: 0;
+        margin-top: -15px;
+        height: 380px;
+        width: 380px;
+    }
+
+    /* Tamanho e posicionamento do conteiner para os inputs */
+    #fill{
+        margin: 0;
+        width:315px;
+        height: 320px;
+        background: #818181;
+        padding-left: 30px;
+        padding-bottom: 30px;
+    }
+
+    /* Tamanho das caixas de input */
+    input{
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    /* Tamanho das caixas de input */
+    #info{
+        height: 30px;
+        padding-left: 15px;
+    
+    }
+
+    /* aumentando o tamanho do input de mensagem */
+    #message{
+        padding: 10px 15px 40px 15px
+    }
+
+
+    /* Botaõ "ENVIAR MENSAGEM" */
+    input[type="submit"]{
+        font-size: 25px;
+        height: 65px;
+    }
+
+    /* Escondendo texos com a tag criada para retirar textos da página no mobile*/
+    #textMobile{
+        display: none;
+    }
+}

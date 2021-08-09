@@ -1,0 +1,94 @@
+/* Criando responsividade */
+@media (max-width:1600px) {
+    
+    /* ajustando o tamanho do cabeçalho */
+    header{
+        margin: 0;
+        height: 80px;
+    }
+
+    /* deixando o fundo do site Branco */
+    .background{
+        background: white;
+    }
+
+    /* definindo a posção do "X" do botão hamburguer */
+    #checkbox-menu:checked + label{
+        margin-left: 270px;
+    }
+
+    /* deixando o botão hamburguer visivel */
+    .containerButton{
+        visibility: visible;
+        margin-left: 10px; 
+        margin-top: 20px;
+    }
+
+    /*ajustando os itens dentro do botão hamburguer*/
+    #menu{
+        justify-content: center;
+        align-items: center;
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        width: 280px;
+        left: 0;
+        top: 0;
+        height: 530px;
+        z-index: 1;
+        background-color: rgba(0,0,0,0.9);
+        padding-inline: 40px;
+        padding-top: 80px;
+        border-bottom-right-radius: 40px;
+        border-top-right-radius: 40px; 
+    }
+
+    /* colocando efeitos ao passar o mouse nos itens do menu hamburguer*/
+    #menu li:hover{
+        transition:0.5s;
+        background-color: rgba(255,255,255,0.05);
+    }
+
+    /* removendo o efeito de passar o mouse dos links do menu hamburguer*/
+    #menu a:hover{
+        transition:0.5s;
+        background-color: rgba(255,255,255,0);
+    }
+
+    /* deixando o menu hamburguer visivel*/
+    #nav.active #menu{
+        visibility: visible;     
+    }
+
+    /*criando um distanciamento dos itens do menu hamburguer das laterais do menu*/
+    #menu a{
+        padding-inline: 20px;
+    }
+
+    /*ajustando a posição dos itens do menu e acrescentando a borda para separar os itens*/
+   #menu li{    
+        border-bottom: 2px solid white;
+        text-align: center; 
+        padding-top: 30px; 
+        padding-bottom: 30px; 
+    }
+
+    /*removendo a borda inferior do ultimo item do menu*/
+    #menu #subline{
+        border: none;
+    }
+
+    /* ajustando o tamanho e centralizando a logo*/
+    #logo{
+        margin-top: 20px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%; 
+    }
+
+    /*diminuindo a fonte do título da página inicial*/
+    #firstPage h1{
+        font-size: 80px;
+    }   
+}
+

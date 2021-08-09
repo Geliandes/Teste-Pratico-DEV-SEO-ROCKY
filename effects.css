@@ -1,0 +1,29 @@
+/* Animações para quando passar o mouse por cima dos botoes e icones das redes sociais que possuem algum link */
+
+#logo:hover{
+    opacity: 0.8;
+}
+
+#menu a:hover{
+    transition:0.5s;
+    background-color: rgba(255,255,255,0.05);
+}
+
+
+#logo1:hover{
+    opacity: 0.4;
+}
+
+#button:hover{
+    opacity: 0.8;
+}
+
+#face:hover{
+    opacity: 0.4;
+}
+
+#local a:hover{
+    opacity: 0.4;
+}
+
+
